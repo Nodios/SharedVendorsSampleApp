@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./client/ui/index.js","modules/vendor.babel","modules/vendor.scheduler","modules/vendor.prop-types","modules/vendor.react-dom","modules/vendor.react","modules/vendor.mobx-react-lite","modules/vendor.mobx-react","modules/vendor.mobx","modules/vendor.object-assign","modules/vendor.process","modules/vendor.webpack"]);
+/******/ 	deferredModules.push(["./client/ui/index.js","vendors~react-app"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -200,6 +200,50 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Cou
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx-react */ \"./node_modules/mobx-react/dist/mobx-react.module.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ \"./client/ui/App.jsx\");\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mobx_react__WEBPACK_IMPORTED_MODULE_2__[\"Provider\"], {\n  rootStore: window.app.app.rootStore\n}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null)), document.getElementById('react-container'));\n\n//# sourceURL=webpack:///./client/ui/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/mobx-react/dist/mobx-react.module.js":
+/*!************************************************************************************************************************!*\
+  !*** delegated ./node_modules/mobx-react/dist/mobx-react.module.js from dll-reference vendor_lib_99c9988e81b2eb1432ee ***!
+  \************************************************************************************************************************/
+/*! exports provided: Observer, useObserver, useAsObservableSource, useLocalStore, isUsingStaticRendering, useStaticRendering, observer, Provider, MobXProviderContext, inject, disposeOnUnmount, PropTypes */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = (__webpack_require__(/*! dll-reference vendor_lib_99c9988e81b2eb1432ee */ \"dll-reference vendor_lib_99c9988e81b2eb1432ee\"))(\"./node_modules/mobx-react/dist/mobx-react.module.js\");\n\n//# sourceURL=webpack:///delegated_./node_modules/mobx-react/dist/mobx-react.module.js_from_dll-reference_vendor_lib_99c9988e81b2eb1432ee?");
+
+/***/ }),
+
+/***/ "./node_modules/react-dom/index.js":
+/*!******************************************************************************************************!*\
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference vendor_lib_99c9988e81b2eb1432ee ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = (__webpack_require__(/*! dll-reference vendor_lib_99c9988e81b2eb1432ee */ \"dll-reference vendor_lib_99c9988e81b2eb1432ee\"))(\"./node_modules/react-dom/index.js\");\n\n//# sourceURL=webpack:///delegated_./node_modules/react-dom/index.js_from_dll-reference_vendor_lib_99c9988e81b2eb1432ee?");
+
+/***/ }),
+
+/***/ "./node_modules/react/index.js":
+/*!**************************************************************************************************!*\
+  !*** delegated ./node_modules/react/index.js from dll-reference vendor_lib_99c9988e81b2eb1432ee ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = (__webpack_require__(/*! dll-reference vendor_lib_99c9988e81b2eb1432ee */ \"dll-reference vendor_lib_99c9988e81b2eb1432ee\"))(\"./node_modules/react/index.js\");\n\n//# sourceURL=webpack:///delegated_./node_modules/react/index.js_from_dll-reference_vendor_lib_99c9988e81b2eb1432ee?");
+
+/***/ }),
+
+/***/ "dll-reference vendor_lib_99c9988e81b2eb1432ee":
+/*!**************************************************!*\
+  !*** external "vendor_lib_99c9988e81b2eb1432ee" ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = vendor_lib_99c9988e81b2eb1432ee;\n\n//# sourceURL=webpack:///external_%22vendor_lib_99c9988e81b2eb1432ee%22?");
 
 /***/ })
 

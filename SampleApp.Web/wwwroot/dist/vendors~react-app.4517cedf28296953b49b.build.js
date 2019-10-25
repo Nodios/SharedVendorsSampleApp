@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["modules/vendor.babel"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~react-app"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js":
 /*!**********************************************************************!*\

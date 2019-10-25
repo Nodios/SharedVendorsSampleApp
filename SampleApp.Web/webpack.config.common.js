@@ -13,20 +13,7 @@ module.exports = function (options, argv) {
             splitChunks: {
                 chunks: 'all',
                 maxInitialRequests: Infinity,
-                minSize: 0,
-                cacheGroups: {
-                    vendor: {
-                        test: /[\\/]node_modules[\\/]/,
-                        name(module) {
-                            // get the name. E.g. node_modules/packageName/not/this/part.js
-                            // or node_modules/packageName
-                            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-
-                            // npm package names are URL-safe, but some servers don't like @ symbols
-                            return `modules/vendor.${packageName.replace('@', '')}`;
-                        },
-                    },
-                }
+                minSize: 0
             }
         },
         module: {
@@ -43,6 +30,9 @@ module.exports = function (options, argv) {
         plugins: [
             new webpack.DefinePlugin({
                 $: path.resolve(__dirname, './wwwroot/lib/jquery/jquery.min.js')
+            }),
+            new webpack.DllReferencePlugin({
+                manifest: path.resolve(__dirname, './wwwroot/dist/vendors/vendor-manifest.json')
             })
         ]
     };

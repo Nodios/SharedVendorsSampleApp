@@ -59,14 +59,10 @@
         </div>
     </footer>
 
-    @*<script asp-src-include="~/dist/app/modules/*.js"></script>
-    <script asp-src-include="~/dist/app/*.js"></script>
-
-    <script asp-src-include="~/dist/ui/modules/*.js"></script>
-    <script asp-src-include="~/dist/ui/*.js"></script>*@
-
-    <script asp-src-include="~/dist/modules/*.js"></script>
-    <script asp-src-include="~/dist/*.js"></script>
+    <script asp-src-include="~/dist/vendors/vendors.*.js"></script>
+    <script asp-src-include="~/dist/vendors~**.js"></script>
+    <script asp-src-include="~/dist/app.**.js"></script>
+    <script asp-src-include="~/dist/react-app.**.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

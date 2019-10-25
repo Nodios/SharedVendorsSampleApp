@@ -3,6 +3,7 @@
   "name": "asp.net",
   "private": true,
   "scripts": {
+    "build-vendors": "webpack --mode development --config webpack.config.vendors.js",
     "build": "webpack --mode development --config webpack.config.app.js --config webpack.config.react.js"
   },
   "devDependencies": {
